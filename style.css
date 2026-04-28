@@ -18,12 +18,18 @@
   font-family: var(--font-primary);
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.04em;
+  line-height: 1.05;
+  letter-spacing: 0;
 }
 
 .text-preset-1 > span {
   display: block;
+}
+
+@media (max-width: 460px) {
+  .text-preset-1 {
+    font-size: 50px;
+  }
 }
 
 /* 카드 타이틀용 */
@@ -105,21 +111,6 @@ section {
   margin-bottom: 16px;
 }
 
-/* .title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
-.title::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--color-light-orange);
-} */
-
 .icons-container {
   display: flex;
   justify-content: space-around;
@@ -169,7 +160,7 @@ a:hover {
   section {
     flex-direction: row;
     max-width: 960px;
-    gap: 60px;
+    gap: 55px;
   }
 
   h1 {
@@ -181,12 +172,12 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
+    gap: 50px;
   }
 
   .decoration-img {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
     margin-top: 0;
   }
